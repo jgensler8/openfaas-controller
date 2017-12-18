@@ -1,0 +1,25 @@
+package: github.com/jgensler8/openfaas-controller
+import:
+- package: github.com/golang/glog
+- package: github.com/jgensler8/openfaas-client-go
+  version: d452a2e4e48161dd2c9c3bad41c0679d1c1150d6
+- package: k8s.io/api
+  subpackages:
+  - core/v1
+- package: k8s.io/apimachinery
+  subpackages:
+  - pkg/apis/meta/v1
+  - pkg/fields
+  - pkg/runtime
+  - pkg/runtime/schema
+  - pkg/runtime/serializer
+  - pkg/types
+  - pkg/watch
+- package: k8s.io/client-go
+  version: v6.0.0
+  subpackages:
+  - discovery
+  - rest
+  - tools/cache
+  - tools/clientcmd
+  - util/flowcontrol
