@@ -1,0 +1,13 @@
+apiVersion: "jgensler8.openfaas.apiextensions.k8s.io/v1"
+kind: "Function"
+metadata:
+  name: "samplefunction"
+spec:
+#  service: "myservice"
+  service: "myservicetwo"
+  image: "nginx:1.13"
+#  image: "nginx:1.12"
+  envVars: []
+  envProcess: ""
+  registryAuth: ""
+  network: ""
